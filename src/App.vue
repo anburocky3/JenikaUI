@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { config } from './config/app.config';
 import JButton from './components/JButton/JButton.vue';
+// import { JButton } from 'jenika-ui';
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import JButton from './components/JButton/JButton.vue';
       <JButton
         variant="primary"
         class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
-        >Primary Button
+        >Some other contents
       </JButton>
     </div>
   </div>
