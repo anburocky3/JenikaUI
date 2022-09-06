@@ -1,5 +1,5 @@
 <script setup>
-import '../../demo/node_modules/jenika-ui/dist/style.css';
+// import '../../demo/node_modules/jenika-ui/dist/style.css';
 // import JButton from '../../src/components/JButton/JButton.vue';
 
 </script>
