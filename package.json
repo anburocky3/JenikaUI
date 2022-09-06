@@ -1,6 +1,6 @@
 {
   "name": "jenika-ui",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "files": [
     "dist"
@@ -11,17 +11,16 @@
     ".": {
       "import": "./dist/jenika-ui.es.js",
       "require": "./dist/jenika-ui.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "vue": "^3.2.37"
-  },
   "devDependencies": {
+    "vue": "^3.2.37",
     "@types/node": "^18.7.15",
     "@vitejs/plugin-vue": "^3.1.0",
     "autoprefixer": "^10.4.8",
@@ -31,5 +30,8 @@
     "vite": "^3.1.0",
     "vue-tsc": "^0.40.4"
   },
-  "types": "./dist/types/index.d.ts"
+  "peerDependencies": {
+    "vue": "^3.2.37"
+  },
+  "types": "./dist/types/global.d.ts"
 }
