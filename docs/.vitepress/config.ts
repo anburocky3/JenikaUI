@@ -1,9 +1,18 @@
 import { config } from '../../src/config/app.config';
 import { defineConfig } from 'vitepress';
+import VueTypeImports from 'vite-plugin-vue-type-imports';
 
 export default defineConfig({
   title: config.libraryName,
   description: config.libraryShortName,
+  head: [
+    [
+      'script',
+      {
+        src: 'https://cdn.tailwindcss.com',
+      },
+    ],
+  ],
   themeConfig: {
     nav: [
       {
@@ -38,11 +47,14 @@ export default defineConfig({
       pattern: 'https://github.com/anburocky3/jenika-ui/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
-    lastUpdatedText: 'Updated Date',
+    lastUpdatedText: 'Last updated at',
   },
   markdown: {
     theme: 'material-palenight',
   },
   lastUpdated: true,
   base: '/JenikaUI',
+  vite: {
+    plugins: [VueTypeImports()],
+  },
 });

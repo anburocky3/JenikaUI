@@ -5,8 +5,10 @@ import JButton from './components/JButton/JButton.vue';
 </script>
 
 <template>
-  <div class="jui-p-10">
-    <h1 class="jui-text-2xl">Welcome to {{ config.libraryName }}</h1>
+  <div class="jui-p-10 jui-bg-gray-50">
+    <h1 class="jui-text-2xl jui-font-bold">
+      Welcome to {{ config.libraryName }}
+    </h1>
     <div class="jui-my-10 jui-space-x-4">
       <JButton variant="primary">Primary </JButton>
       <JButton variant="secondary">Secondary </JButton>
@@ -15,7 +17,7 @@ import JButton from './components/JButton/JButton.vue';
       <JButton variant="warning">Warning </JButton>
       <JButton variant="info">Info </JButton>
       <JButton variant="dark">Danger </JButton>
-      <JButton>Default Button </JButton>
+      <!-- <JButton>Default Button </JButton> -->
       <!-- Other variants -->
       <JButton variant="primary" disabled>Primary (Disabled)</JButton>
     </div>

@@ -1,5 +1,3 @@
-declare module 'jenika-ui';
-
 export enum Variant {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
@@ -9,9 +7,10 @@ export enum Variant {
   DANGER = 'danger',
   DARK = 'dark',
   LIGHT = 'light',
+  DEFAULT = 'default',
 }
 
-export type VariantType = `${Variant}` | undefined;
+export type VariantType = `${Variant}`;
 
 export type ButtonProps = {
   variant?: VariantType;
