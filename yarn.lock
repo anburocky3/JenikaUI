@@ -913,6 +913,15 @@ jenika-ui@*:
     postcss-flexbugs-fixes "^5.0.2"
     postcss-preset-env "^7.8.1"
 
+jenika-ui@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/jenika-ui/-/jenika-ui-0.0.8.tgz#32d07e52832906a5c59fc19119565952ae35ac1d"
+  integrity sha512-VPlE5SaVIgv+GZ9b1AojyYvCEwnDUQXKJmdFsTXPpAqPltdBn9EfxFNKjiETmqKlv2Se4pJhdC7pRlKYiZxRYA==
+  dependencies:
+    jenika-ui "*"
+    postcss-flexbugs-fixes "^5.0.2"
+    postcss-preset-env "^7.8.1"
+
 jsonc-parser@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"

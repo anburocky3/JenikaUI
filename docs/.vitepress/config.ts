@@ -20,7 +20,10 @@ export default defineConfig({
         link: '/installation',
         activeMatch: '/installation',
       },
-      { text: 'Contribute', link: 'https://github.com/anburocky3/jenikaui' },
+      {
+        text: 'Contribute',
+        link: 'https://github.com/anburocky3/JenikaUI/fork',
+      },
     ],
     sidebar: [
       {
@@ -36,7 +39,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/anburocky3' },
+      { icon: 'github', link: 'https://github.com/anburocky3/JenikaUI' },
       { icon: 'linkedin', link: 'https://linkedin.com/in/anburocky3/' },
     ],
     footer: {
@@ -44,7 +47,7 @@ export default defineConfig({
       copyright: 'Copyright © 2022-present Anbuselvan Rocky',
     },
     editLink: {
-      pattern: 'https://github.com/anburocky3/jenika-ui/edit/main/docs/:path',
+      pattern: 'https://github.com/anburocky3/JenikaUI/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
     lastUpdatedText: 'Last updated at',

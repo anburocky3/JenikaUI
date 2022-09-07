@@ -40,7 +40,7 @@
   },
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "jenika-ui": "*",
+    "jenika-ui": "^0.0.8",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.8.1"
   }
