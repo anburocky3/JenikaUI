@@ -1,5 +1,23 @@
 <script setup lang="ts">
-import { ButtonProps, Variant } from '../../types/global';
+enum Variant {
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+  INFO = 'info',
+  WARNING = 'warning',
+  SUCCESS = 'success',
+  DANGER = 'danger',
+  DARK = 'dark',
+  LIGHT = 'light',
+  DEFAULT = 'default',
+}
+
+type VariantType = `${Variant}`;
+
+type ButtonProps = {
+  variant?: VariantType;
+  type?: 'button' | 'submit' | 'reset' | undefined;
+  disabled?: boolean;
+};
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: 'primary',
@@ -16,6 +34,8 @@ const variants = {
   [Variant.LIGHT]: 'jui-bg-white hover:jui-bg-gray-100 jui-text-black',
   [Variant.DEFAULT]: 'jui-bg-gray-50 hover:jui-bg-gray-100 jui-text-black ',
 };
+
+console.log('Variant: ' + props.variant);
 
 let classes = [
   'jui-py-2 jui-px-4 jui-font-semibold jui-rounded jui-shadow jui-text-white disabled:jui-opacity-75 disabled:jui-cursor-not-allowed',

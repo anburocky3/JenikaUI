@@ -1,6 +1,6 @@
 <script setup>
-import '../../dist/style.css';
-import JButton from '../../src/components/JButton/JButton.vue';
+import { JButton } from 'jenika-ui';
+import 'jenika-ui/dist/style.css';
 
 </script>
 

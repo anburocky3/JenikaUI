@@ -5,14 +5,14 @@ import VueTypeImports from 'vite-plugin-vue-type-imports';
 export default defineConfig({
   title: config.libraryName,
   description: config.libraryShortName,
-  head: [
-    [
-      'script',
-      {
-        src: 'https://cdn.tailwindcss.com',
-      },
-    ],
-  ],
+  // head: [
+  //   [
+  //     'script',
+  //     {
+  //       src: 'https://cdn.tailwindcss.com',
+  //     },
+  //   ],
+  // ],
   themeConfig: {
     nav: [
       {
